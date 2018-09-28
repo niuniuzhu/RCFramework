@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{476A8604-158A-4321-A34D-80B8C815DB57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FairyUGUI</RootNamespace>
+    <AssemblyName>FairyUGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'IOS_Release|AnyCPU'">
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_5</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'IOS_Release|x64'">
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_5</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'IOS_Release|x86'">
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DOTween">
+      <HintPath>..\..\Lib\DOTween.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Lib\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Lib\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\BlurFilter.cs" />
+    <Compile Include="Core\Button.cs" />
+    <Compile Include="Core\ColorFilter.cs" />
+    <Compile Include="Core\Container.cs" />
+    <Compile Include="Core\DisplayObject.cs" />
+    <Compile Include="Core\DisplayOptions.cs" />
+    <Compile Include="Core\Fonts\BaseFont.cs" />
+    <Compile Include="Core\Fonts\BitmapFont.cs" />
+    <Compile Include="Core\Fonts\DynamicFont.cs" />
+    <Compile Include="Core\Fonts\FontManager.cs" />
+    <Compile Include="Core\GoWrapper.cs" />
+    <Compile Include="Core\ILayoutItem.cs" />
+    <Compile Include="Core\Image.cs" />
+    <Compile Include="Core\IRaycastFilter.cs" />
+    <Compile Include="Core\Layout.cs" />
+    <Compile Include="Core\MaterialManager.cs" />
+    <Compile Include="Core\MovieClip.cs" />
+    <Compile Include="Core\NMaterial.cs" />
+    <Compile Include="Core\NSprite.cs" />
+    <Compile Include="Core\PlayState.cs" />
+    <Compile Include="Core\Slider.cs" />
+    <Compile Include="Core\ScrollBar.cs" />
+    <Compile Include="Core\Shape.cs" />
+    <Compile Include="Core\NTexture.cs" />
+    <Compile Include="Core\Stage.cs" />
+    <Compile Include="Core\TextField.cs" />
+    <Compile Include="Core\TextInput.cs" />
+    <Compile Include="Core\UpdateContext.cs" />
+    <Compile Include="Event\AxisEventData.cs" />
+    <Compile Include="Event\BaseEventData.cs" />
+    <Compile Include="Event\PointerInput.cs" />
+    <Compile Include="Event\DisplayObjectRegister.cs" />
+    <Compile Include="Event\EventBridge.cs" />
+    <Compile Include="Event\EventContext.cs" />
+    <Compile Include="Event\EventDispatcher.cs" />
+    <Compile Include="Event\EventListener.cs" />
+    <Compile Include="Event\EventSystem.cs" />
+    <Compile Include="Event\EventType.cs" />
+    <Compile Include="Event\ExecuteEvents.cs" />
+    <Compile Include="Event\PointerEventData.cs" />
+    <Compile Include="Event\Raycaster.cs" />
+    <Compile Include="Event\RaycastResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ClipHelper.cs" />
+    <Compile Include="UI\Controller.cs" />
+    <Compile Include="UI\GearIcon.cs" />
+    <Compile Include="UI\GearText.cs" />
+    <Compile Include="UI\ITextColorGear.cs" />
+    <Compile Include="UI\IWindowAnimation.cs" />
+    <Compile Include="UI\Joystick.cs" />
+    <Compile Include="UI\UIAssetBundle.cs" />
+    <Compile Include="UI\DragDropManager.cs" />
+    <Compile Include="UI\DragManager.cs" />
+    <Compile Include="UI\GComboBox.cs" />
+    <Compile Include="UI\GearAnimation.cs" />
+    <Compile Include="UI\GearColor.cs" />
+    <Compile Include="UI\GGraph.cs" />
+    <Compile Include="UI\GList.cs" />
+    <Compile Include="UI\GButton.cs" />
+    <Compile Include="UI\GearBase.cs" />
+    <Compile Include="UI\GearDisplay.cs" />
+    <Compile Include="UI\GearLook.cs" />
+    <Compile Include="UI\GearSize.cs" />
+    <Compile Include="UI\GearXY.cs" />
+    <Compile Include="UI\GGroup.cs" />
+    <Compile Include="UI\GImage.cs" />
+    <Compile Include="UI\GLabel.cs" />
+    <Compile Include="UI\GLoader.cs" />
+    <Compile Include="UI\GMovieClip.cs" />
+    <Compile Include="UI\GObjectPool.cs" />
+    <Compile Include="UI\GProgressBar.cs" />
+    <Compile Include="UI\GRichTextField.cs" />
+    <Compile Include="UI\GScrollBar.cs" />
+    <Compile Include="UI\GSlider.cs" />
+    <Compile Include="UI\GTextField.cs" />
+    <Compile Include="UI\GTextInput.cs" />
+    <Compile Include="UI\IAnimationGear.cs" />
+    <Compile Include="UI\IUISource.cs" />
+    <Compile Include="UI\PackageItem.cs" />
+    <Compile Include="UI\PageOption.cs" />
+    <Compile Include="UI\RelationItem.cs" />
+    <Compile Include="UI\Relations.cs" />
+    <Compile Include="Core\ScrollView.cs" />
+    <Compile Include="UI\UGUIExt\DisplayObjectGraphic.cs" />
+    <Compile Include="UI\UGUIExt\GraphGraphic.cs" />
+    <Compile Include="UI\UGUIExt\ImageEx.cs" />
+    <Compile Include="UI\UGUIExt\TextEx.cs" />
+    <Compile Include="UI\UGUIExt\UIMesh.cs" />
+    <Compile Include="UI\UILoader.cs" />
+    <Compile Include="UI\UISource.cs" />
+    <Compile Include="UI\Window.cs" />
+    <Compile Include="UI\Transition.cs" />
+    <Compile Include="UI\FieldTypes.cs" />
+    <Compile Include="UI\GComponent.cs" />
+    <Compile Include="UI\GObject.cs" />
+    <Compile Include="UI\GRoot.cs" />
+    <Compile Include="UI\UIConfig.cs" />
+    <Compile Include="UI\UIObjectFactory.cs" />
+    <Compile Include="UI\UIPackage.cs" />
+    <Compile Include="UI\WindowFadeOutAnimation.cs" />
+    <Compile Include="UI\WindowScaleAnimation.cs" />
+    <Compile Include="Utils\ToolSet.cs" />
+    <Compile Include="Utils\ZipReader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Core.csproj">
+      <Project>{c4add5d5-1538-4c98-abf1-9741da4329e6}</Project>
+      <Name>Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Game\Game.csproj">
+      <Project>{a2327194-cf60-41f5-8eb7-49433f2d8e81}</Project>
+      <Name>Game</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(ProjectDir)r.bat $(TargetDir) $(TargetName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
